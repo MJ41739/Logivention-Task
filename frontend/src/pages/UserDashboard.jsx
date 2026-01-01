@@ -9,7 +9,7 @@ const UserDashboard = () => {
         fetchGroups()
     }, [])
     const fetchUser = async () => {
-    const res = await fetch("http://localhost:5000/api/user/me", {
+    const res = await fetch("https://logivention-task.onrender.com/api/user/me", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem('token')
       }
@@ -20,7 +20,7 @@ const UserDashboard = () => {
   }
 
     const fetchGroups = ()=>{
-        fetch('http://localhost:5000/api/user/my-groups', {
+        fetch('https://logivention-task.onrender.com/api/user/my-groups', {
             headers: { Authorization: 'Bearer ' + localStorage.getItem('token') }
         })
         .then(res => res.json())

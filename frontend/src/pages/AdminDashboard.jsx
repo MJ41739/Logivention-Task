@@ -18,7 +18,7 @@ const AdminDashboard = () => {
 
     const fetchUsers = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/admin/users", {
+        const res = await fetch("https://logivention-task.onrender.com/api/admin/users", {
           headers: { Authorization: "Bearer " + token }
         })
 
@@ -35,7 +35,7 @@ const AdminDashboard = () => {
 
     const fetchGroups = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/admin/groups", {
+        const res = await fetch("https://logivention-task.onrender.com/api/admin/groups", {
           headers: { Authorization: "Bearer " + token }
         })
 
@@ -51,7 +51,7 @@ const AdminDashboard = () => {
     }
 
     const createUser = async()=>{
-        await fetch('http://localhost:5000/api/admin/create-user', {
+        await fetch('https://logivention-task.onrender.com/api/admin/create-user', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json',
                 Authorization: 'Bearer ' + token
@@ -64,7 +64,7 @@ const AdminDashboard = () => {
     }
 
     const createGroup = async()=>{
-        await fetch('http://localhost:5000/api/admin/create-group', {
+        await fetch('https://logivention-task.onrender.com/api/admin/create-group', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json',
                 Authorization: 'Bearer ' + token
@@ -77,7 +77,7 @@ const AdminDashboard = () => {
     }
 
     const addUserToGroup = async()=>{
-        await fetch('http://localhost:5000/api/admin/add-user-to-group', {
+        await fetch('https://logivention-task.onrender.com/api/admin/add-user-to-group', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json',
                 Authorization: "Bearer " + token
