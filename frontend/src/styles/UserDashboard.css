@@ -1,0 +1,43 @@
+body{
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+}
+.dashboard-container {
+    width: 97vw;
+    height: 94vh;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    color: #ffffff;
+}
+.nav {
+    display: flex;
+    color: blanchedalmond;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: cadetblue;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.logout-btn {
+    border: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.groups {
+    background-color: #e66060;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.gname {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}

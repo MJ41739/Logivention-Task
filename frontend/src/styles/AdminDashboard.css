@@ -1,0 +1,52 @@
+body{
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+.admin-dashboard {
+    width: 97vw;
+    height: 94vh;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    color: #000000;
+}
+.admin-header {
+    display: flex;
+    color: blanchedalmond;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: red;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.createuser, .creategroup, .addusertogroup {
+    max-width: 420px;
+    margin: 0 auto 40px auto;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    padding: 10px;
+}
+.createuser input, .creategroup input, .addusertogroup select {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.createuser button, .creategroup button, .addusertogroup button {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+}
+.createuser h2, .creategroup h3, .addusertogroup h3 {
+    margin-bottom: 15px;
+    text-align: center;
+}
