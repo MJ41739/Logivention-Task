@@ -6,7 +6,7 @@ import User from './models/User.js';
 import bcrypt from 'bcryptjs';
 
 const app = express();
-app.use(cors("*"));
+app.use(cors(process.env.FRONTEND_URL));
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI).then(() => console.log("mongodb connected"))
